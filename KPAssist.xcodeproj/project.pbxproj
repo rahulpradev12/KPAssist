@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDF9B9BA2914E78A008CF800 /* KPAssist.docc in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9B92914E78A008CF800 /* KPAssist.docc */; };
+		EDF9B9C02914E78B008CF800 /* KPAssist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF9B9B52914E78A008CF800 /* KPAssist.framework */; };
+		EDF9B9C52914E78B008CF800 /* KPAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9C42914E78B008CF800 /* KPAssistTests.swift */; };
+		EDF9B9C62914E78B008CF800 /* KPAssist.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF9B9B82914E78A008CF800 /* KPAssist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF9B9D029150BBB008CF800 /* ActionClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */; };
+		EDF9B9D329150CB9008CF800 /* KPWordTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */; };
+		EDF9B9D529150DF1008CF800 /* KPVoiceCommandAssitant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF9B9C12914E78B008CF800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF9B9AC2914E78A008CF800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF9B9B42914E78A008CF800;
+			remoteInfo = KPAssist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDF9B9B52914E78A008CF800 /* KPAssist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPAssist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9B9B82914E78A008CF800 /* KPAssist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAssist.h; sourceTree = "<group>"; };
+		EDF9B9B92914E78A008CF800 /* KPAssist.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KPAssist.docc; sourceTree = "<group>"; };
+		EDF9B9BF2914E78B008CF800 /* KPAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9B9C42914E78B008CF800 /* KPAssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPAssistTests.swift; sourceTree = "<group>"; };
+		EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ActionClassifier1.mlmodel; sourceTree = "<group>"; };
+		EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPWordTagger.swift; sourceTree = "<group>"; };
+		EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPVoiceCommandAssitant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF9B9B22914E78A008CF800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B9BC2914E78B008CF800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B9C02914E78B008CF800 /* KPAssist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDF9B9AB2914E78A008CF800 = {
+			isa = PBXGroup;
+			children = (
+				EDF9B9B72914E78A008CF800 /* KPAssist */,
+				EDF9B9C32914E78B008CF800 /* KPAssistTests */,
+				EDF9B9B62914E78A008CF800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF9B9B62914E78A008CF800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B9B52914E78A008CF800 /* KPAssist.framework */,
+				EDF9B9BF2914E78B008CF800 /* KPAssistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF9B9B72914E78A008CF800 /* KPAssist */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */,
+				EDF9B9B82914E78A008CF800 /* KPAssist.h */,
+				EDF9B9B92914E78A008CF800 /* KPAssist.docc */,
+				EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */,
+				EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */,
+			);
+			path = KPAssist;
+			sourceTree = "<group>";
+		};
+		EDF9B9C32914E78B008CF800 /* KPAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B9C42914E78B008CF800 /* KPAssistTests.swift */,
+			);
+			path = KPAssistTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EDF9B9B02914E78A008CF800 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B9C62914E78B008CF800 /* KPAssist.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EDF9B9B42914E78A008CF800 /* KPAssist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9B9C92914E78B008CF800 /* Build configuration list for PBXNativeTarget "KPAssist" */;
+			buildPhases = (
+				EDF9B9B02914E78A008CF800 /* Headers */,
+				EDF9B9B12914E78A008CF800 /* Sources */,
+				EDF9B9B22914E78A008CF800 /* Frameworks */,
+				EDF9B9B32914E78A008CF800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPAssist;
+			productName = KPAssist;
+			productReference = EDF9B9B52914E78A008CF800 /* KPAssist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDF9B9BE2914E78B008CF800 /* KPAssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9B9CC2914E78B008CF800 /* Build configuration list for PBXNativeTarget "KPAssistTests" */;
+			buildPhases = (
+				EDF9B9BB2914E78B008CF800 /* Sources */,
+				EDF9B9BC2914E78B008CF800 /* Frameworks */,
+				EDF9B9BD2914E78B008CF800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF9B9C22914E78B008CF800 /* PBXTargetDependency */,
+			);
+			name = KPAssistTests;
+			productName = KPAssistTests;
+			productReference = EDF9B9BF2914E78B008CF800 /* KPAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF9B9AC2914E78A008CF800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EDF9B9B42914E78A008CF800 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					EDF9B9BE2914E78B008CF800 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = EDF9B9AF2914E78A008CF800 /* Build configuration list for PBXProject "KPAssist" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF9B9AB2914E78A008CF800;
+			productRefGroup = EDF9B9B62914E78A008CF800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF9B9B42914E78A008CF800 /* KPAssist */,
+				EDF9B9BE2914E78B008CF800 /* KPAssistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF9B9B32914E78A008CF800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B9BD2914E78B008CF800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF9B9B12914E78A008CF800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B9BA2914E78A008CF800 /* KPAssist.docc in Sources */,
+				EDF9B9D329150CB9008CF800 /* KPWordTagger.swift in Sources */,
+				EDF9B9D529150DF1008CF800 /* KPVoiceCommandAssitant.swift in Sources */,
+				EDF9B9D029150BBB008CF800 /* ActionClassifier1.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B9BB2914E78B008CF800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B9C52914E78B008CF800 /* KPAssistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF9B9C22914E78B008CF800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF9B9B42914E78A008CF800 /* KPAssist */;
+			targetProxy = EDF9B9C12914E78B008CF800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EDF9B9C72914E78B008CF800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDF9B9C82914E78B008CF800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDF9B9CA2914E78B008CF800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiserpermanente.KPAssist;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF9B9CB2914E78B008CF800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiserpermanente.KPAssist;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDF9B9CD2914E78B008CF800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiserpermanente.KPAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF9B9CE2914E78B008CF800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiserpermanente.KPAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF9B9AF2914E78A008CF800 /* Build configuration list for PBXProject "KPAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B9C72914E78B008CF800 /* Debug */,
+				EDF9B9C82914E78B008CF800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF9B9C92914E78B008CF800 /* Build configuration list for PBXNativeTarget "KPAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B9CA2914E78B008CF800 /* Debug */,
+				EDF9B9CB2914E78B008CF800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF9B9CC2914E78B008CF800 /* Build configuration list for PBXNativeTarget "KPAssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B9CD2914E78B008CF800 /* Debug */,
+				EDF9B9CE2914E78B008CF800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF9B9AC2914E78A008CF800 /* Project object */;
+}
