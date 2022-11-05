@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "KPAssist is used to provide support to users through speech assistance for frequently used actions."
 
   spec.description  = <<-DESC
-                     This module is going to play role of voice assistant in the apps.
+                     This module is going to play role of voice assistant in the apps. Model will be trained as deep the requirements are added.
                    DESC
 
   spec.homepage     = "https://github.com/rahulpradev12/KPAssist"
@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   
-  #spec.ios.deployment_target = "12.1"
-  #spec.swift_version = "4.2"
+  spec.ios.deployment_target = "12.0"
+  spec.swift_version = "4.2"
 
 
   spec.source       = { :git => "https://github.com/rahulpradev12/KPAssist.git", :tag => "#{spec.version}" }

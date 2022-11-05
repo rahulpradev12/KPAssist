@@ -9,7 +9,7 @@ import Foundation
 
 public class KPVoiceCommandAssitant {
     let tagger = KPWordTagger()
-    let reviews = [
+    let commands = [
         "need bill",
         "need prescription",
         "Hey please call Doc",
@@ -22,7 +22,7 @@ public class KPVoiceCommandAssitant {
     ]
     
     public func displayPrediction() {
-        reviews.forEach { review in
+        commands.forEach { review in
             guard let prediction = tagger.prediction(for: review) else { return }
             print("\(review): \(prediction)")
         }
