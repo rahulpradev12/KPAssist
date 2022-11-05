@@ -7,7 +7,7 @@
 
 import Foundation
 
-class KPVoiceCommandAssitant {
+public class KPVoiceCommandAssitant {
     let tagger = KPWordTagger()
     let reviews = [
         "need bill",
@@ -21,7 +21,7 @@ class KPVoiceCommandAssitant {
         "Jon Snow is the King in the North!"
     ]
     
-    func displayPrediction() {
+    public func displayPrediction() {
         reviews.forEach { review in
             guard let prediction = tagger.prediction(for: review) else { return }
             print("\(review): \(prediction)")

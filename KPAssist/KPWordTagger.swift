@@ -8,7 +8,7 @@
 import CoreML
 import NaturalLanguage
 
-class KPWordTagger {
+public class KPWordTagger {
   // Custom scheme
   private let scheme = NLTagScheme("KPVoiceActionReview")
   private let options: NLTagger.Options = [.omitPunctuation]
@@ -25,7 +25,7 @@ class KPWordTagger {
     }
   }()
   
-  func prediction(for text: String) -> String? {
+  public func prediction(for text: String) -> String? {
     tagger?.string = text
     let range = text.startIndex ..< text.endIndex
     tagger?.setLanguage(.english, range: range)
