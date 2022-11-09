@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "KPAssist"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "KPAssist is used to provide support to users through speech assistance for frequently used actions."
 
   spec.description  = <<-DESC
@@ -26,6 +26,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/rahulpradev12/KPAssist.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "KPAssist/**/*.{swift}"
-
+  spec.resources = "KPAssist/**/*.{mlmodel}"
 
 end

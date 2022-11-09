@@ -56,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED81E26E291BA57B000DE6A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EDF9B9AB2914E78A008CF800 = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +85,7 @@
 		EDF9B9B72914E78A008CF800 /* KPAssist */ = {
 			isa = PBXGroup;
 			children = (
-				EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */,
+				ED81E26E291BA57B000DE6A7 /* Resources */,
 				EDF9B9B82914E78A008CF800 /* KPAssist.h */,
 				EDF9B9B92914E78A008CF800 /* KPAssist.docc */,
 				EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */,
