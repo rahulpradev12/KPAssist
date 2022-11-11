@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "KPAssist"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "KPAssist is used to provide support to users through speech assistance for frequently used actions."
 
   spec.description  = <<-DESC
