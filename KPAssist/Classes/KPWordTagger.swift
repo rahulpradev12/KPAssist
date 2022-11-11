@@ -14,14 +14,24 @@ public class KPWordTagger {
     private let scheme = NLTagScheme("KPVoiceActionReview")
     private let options: NLTagger.Options = [.omitPunctuation]
     
+    
     // Word Tagging
     private lazy var tagger: NLTagger? = {
         do {
-            let url = Bundle.main.url(forResource: "ActionClassifier1", withExtension: "mlmodelc")!
-            let model = try NLModel(contentsOf: url)  // MLModel -> NLModel
-            let tagger = NLTagger(tagSchemes: [scheme])
-            tagger.setModels([model], forTagScheme: scheme) // Associating custom model with custom scheme
-            return tagger
+            let mainBundle = Bundle(for: Self.self)
+            if let url = mainBundle.url(forResource: "KPAssist", withExtension: "bundle"){
+                
+                let kpAssistBundle = Bundle(url: url)
+        
+                let mlModelURL = kpAssistBundle?.url(forResource: "ActionClassifier1", withExtension: "mlmodelc")
+                                
+                let model = try NLModel(contentsOf: mlModelURL!)  // MLModel -> NLModel
+                let tagger = NLTagger(tagSchemes: [scheme])
+                tagger.setModels([model], forTagScheme: scheme) // Associating custom model with custom scheme
+                return tagger
+            }
+            return nil
+            
         } catch {
             return nil
         }

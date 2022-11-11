@@ -25,7 +25,9 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/rahulpradev12/KPAssist.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "KPAssist/**/*.{swift}"
-  spec.resources = "KPAssist/**/*.{mlmodel}"
+  spec.source_files  = "KPAssist/Classes/**/*.{swift}"
+
+  spec.resource_bundles = { 'KPAssist' => 'KPAssist/Resources/*.{mlmodel}' }
+  
 
 end

@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED81E27A291D3C2A000DE6A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E279291D3C2A000DE6A7 /* AppDelegate.swift */; };
+		ED81E27C291D3C2A000DE6A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E27B291D3C2A000DE6A7 /* SceneDelegate.swift */; };
+		ED81E27E291D3C2A000DE6A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E27D291D3C2A000DE6A7 /* ViewController.swift */; };
+		ED81E281291D3C2A000DE6A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81E27F291D3C2A000DE6A7 /* Main.storyboard */; };
+		ED81E283291D3C2C000DE6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81E282291D3C2C000DE6A7 /* Assets.xcassets */; };
+		ED81E286291D3C2C000DE6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81E284291D3C2C000DE6A7 /* LaunchScreen.storyboard */; };
+		ED81E28F291D4135000DE6A7 /* ActionClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ED81E28E291D4134000DE6A7 /* ActionClassifier1.mlmodel */; };
 		EDF9B9BA2914E78A008CF800 /* KPAssist.docc in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9B92914E78A008CF800 /* KPAssist.docc */; };
 		EDF9B9C02914E78B008CF800 /* KPAssist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF9B9B52914E78A008CF800 /* KPAssist.framework */; };
 		EDF9B9C52914E78B008CF800 /* KPAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9C42914E78B008CF800 /* KPAssistTests.swift */; };
 		EDF9B9C62914E78B008CF800 /* KPAssist.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF9B9B82914E78A008CF800 /* KPAssist.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDF9B9D029150BBB008CF800 /* ActionClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */; };
 		EDF9B9D329150CB9008CF800 /* KPWordTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */; };
 		EDF9B9D529150DF1008CF800 /* KPVoiceCommandAssitant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */; };
 /* End PBXBuildFile section */
@@ -27,17 +33,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED81E277291D3C2A000DE6A7 /* KPAssistDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPAssistDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED81E279291D3C2A000DE6A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED81E27B291D3C2A000DE6A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED81E27D291D3C2A000DE6A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED81E280291D3C2A000DE6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED81E282291D3C2C000DE6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED81E285291D3C2C000DE6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED81E287291D3C2C000DE6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED81E28E291D4134000DE6A7 /* ActionClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ActionClassifier1.mlmodel; sourceTree = "<group>"; };
 		EDF9B9B52914E78A008CF800 /* KPAssist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPAssist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF9B9B82914E78A008CF800 /* KPAssist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAssist.h; sourceTree = "<group>"; };
 		EDF9B9B92914E78A008CF800 /* KPAssist.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KPAssist.docc; sourceTree = "<group>"; };
 		EDF9B9BF2914E78B008CF800 /* KPAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF9B9C42914E78B008CF800 /* KPAssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPAssistTests.swift; sourceTree = "<group>"; };
-		EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ActionClassifier1.mlmodel; sourceTree = "<group>"; };
 		EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPWordTagger.swift; sourceTree = "<group>"; };
 		EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPVoiceCommandAssitant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ED81E274291D3C2A000DE6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDF9B9B22914E78A008CF800 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,9 +80,32 @@
 		ED81E26E291BA57B000DE6A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EDF9B9CF29150BBB008CF800 /* ActionClassifier1.mlmodel */,
+				ED81E28E291D4134000DE6A7 /* ActionClassifier1.mlmodel */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED81E272291D3A6D000DE6A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */,
+				EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ED81E278291D3C2A000DE6A7 /* KPAssistDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ED81E279291D3C2A000DE6A7 /* AppDelegate.swift */,
+				ED81E27B291D3C2A000DE6A7 /* SceneDelegate.swift */,
+				ED81E27D291D3C2A000DE6A7 /* ViewController.swift */,
+				ED81E27F291D3C2A000DE6A7 /* Main.storyboard */,
+				ED81E282291D3C2C000DE6A7 /* Assets.xcassets */,
+				ED81E284291D3C2C000DE6A7 /* LaunchScreen.storyboard */,
+				ED81E287291D3C2C000DE6A7 /* Info.plist */,
+			);
+			path = KPAssistDemo;
 			sourceTree = "<group>";
 		};
 		EDF9B9AB2914E78A008CF800 = {
@@ -69,6 +113,7 @@
 			children = (
 				EDF9B9B72914E78A008CF800 /* KPAssist */,
 				EDF9B9C32914E78B008CF800 /* KPAssistTests */,
+				ED81E278291D3C2A000DE6A7 /* KPAssistDemo */,
 				EDF9B9B62914E78A008CF800 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +123,7 @@
 			children = (
 				EDF9B9B52914E78A008CF800 /* KPAssist.framework */,
 				EDF9B9BF2914E78B008CF800 /* KPAssistTests.xctest */,
+				ED81E277291D3C2A000DE6A7 /* KPAssistDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,11 +131,10 @@
 		EDF9B9B72914E78A008CF800 /* KPAssist */ = {
 			isa = PBXGroup;
 			children = (
+				ED81E272291D3A6D000DE6A7 /* Classes */,
 				ED81E26E291BA57B000DE6A7 /* Resources */,
 				EDF9B9B82914E78A008CF800 /* KPAssist.h */,
 				EDF9B9B92914E78A008CF800 /* KPAssist.docc */,
-				EDF9B9D229150CB9008CF800 /* KPWordTagger.swift */,
-				EDF9B9D429150DF1008CF800 /* KPVoiceCommandAssitant.swift */,
 			);
 			path = KPAssist;
 			sourceTree = "<group>";
@@ -116,6 +161,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		ED81E276291D3C2A000DE6A7 /* KPAssistDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED81E288291D3C2C000DE6A7 /* Build configuration list for PBXNativeTarget "KPAssistDemo" */;
+			buildPhases = (
+				ED81E273291D3C2A000DE6A7 /* Sources */,
+				ED81E274291D3C2A000DE6A7 /* Frameworks */,
+				ED81E275291D3C2A000DE6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPAssistDemo;
+			productName = KPAssistDemo;
+			productReference = ED81E277291D3C2A000DE6A7 /* KPAssistDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		EDF9B9B42914E78A008CF800 /* KPAssist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDF9B9C92914E78B008CF800 /* Build configuration list for PBXNativeTarget "KPAssist" */;
@@ -162,6 +224,9 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					ED81E276291D3C2A000DE6A7 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					EDF9B9B42914E78A008CF800 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -185,11 +250,22 @@
 			targets = (
 				EDF9B9B42914E78A008CF800 /* KPAssist */,
 				EDF9B9BE2914E78B008CF800 /* KPAssistTests */,
+				ED81E276291D3C2A000DE6A7 /* KPAssistDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ED81E275291D3C2A000DE6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED81E286291D3C2C000DE6A7 /* LaunchScreen.storyboard in Resources */,
+				ED81E283291D3C2C000DE6A7 /* Assets.xcassets in Resources */,
+				ED81E281291D3C2A000DE6A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDF9B9B32914E78A008CF800 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,14 +283,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ED81E273291D3C2A000DE6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED81E27E291D3C2A000DE6A7 /* ViewController.swift in Sources */,
+				ED81E27A291D3C2A000DE6A7 /* AppDelegate.swift in Sources */,
+				ED81E27C291D3C2A000DE6A7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDF9B9B12914E78A008CF800 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EDF9B9BA2914E78A008CF800 /* KPAssist.docc in Sources */,
+				ED81E28F291D4135000DE6A7 /* ActionClassifier1.mlmodel in Sources */,
 				EDF9B9D329150CB9008CF800 /* KPWordTagger.swift in Sources */,
 				EDF9B9D529150DF1008CF800 /* KPVoiceCommandAssitant.swift in Sources */,
-				EDF9B9D029150BBB008CF800 /* ActionClassifier1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +322,82 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		ED81E27F291D3C2A000DE6A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED81E280291D3C2A000DE6A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED81E284291D3C2C000DE6A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED81E285291D3C2C000DE6A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		ED81E289291D3C2C000DE6A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KPAssistDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiserpermanente.KPAssistDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED81E28A291D3C2C000DE6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KPAssistDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiserpermanente.KPAssistDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EDF9B9C72914E78B008CF800 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,6 +607,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ED81E288291D3C2C000DE6A7 /* Build configuration list for PBXNativeTarget "KPAssistDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED81E289291D3C2C000DE6A7 /* Debug */,
+				ED81E28A291D3C2C000DE6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EDF9B9AF2914E78A008CF800 /* Build configuration list for PBXProject "KPAssist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
