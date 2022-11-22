@@ -20,6 +20,7 @@ public class KPVoiceCommandAssitant {
     
     // Assign App Specific Locale
     public var locale: Locale = Locale(identifier: "en_US")
+    public weak var delegate: KPAssistDelegate?
     
     // MARK: IVars
     
@@ -36,6 +37,13 @@ public class KPVoiceCommandAssitant {
         "need prescription",
         "Hey please call Doc",
         "bill amount",
+        "hello",
+        "appointment",
+        "cancel appointment",
+        "Hey, can you book an appointment",
+        "Thank you dude for the appointment",
+        "hey! good morning. Need appointment", //fails for appointment
+        "hello doctor"
     ]
     
     
@@ -53,7 +61,8 @@ public class KPVoiceCommandAssitant {
     
     // MARK: Public Methods
     
-    public func startListening() {
+    public func startListening() throws -> Void {
+        var textBuffer = ""
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
         node.installTap(onBus: 0, bufferSize: Constants.bufferSize, format: recordingFormat) { buffer, _ in
@@ -63,31 +72,55 @@ public class KPVoiceCommandAssitant {
         do {
             try audioEngine.start()
         } catch {
-            // throw an error via delegate
-            return print(error)
+            throw KPAssistError.audioEngineNotRecognized
         }
         guard let myRecognizer = SFSpeechRecognizer() else {
             // throw an error via delegate
             return
         }
         if !myRecognizer.isAvailable {
+            
             // throw an error via delegate
             // Recognizer is not available right now
-            return
-        }
+            throw KPAssistError.speechRecognizerNotAvailable
         
+        }
+        var timer = Timer()
+        
+        //"Hello hello hey hi can I just bring me I think it\'s working"
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
             if let result = result {
-                let transcriptString = result.bestTranscription.formattedString
-                guard let prediction = self.tagger.prediction(for: transcriptString) else { return }
+                let instructionText = result.bestTranscription.formattedString as? String ?? ""
+                if textBuffer != instructionText && !result.isFinal {
+                    timer.invalidate()
+                    textBuffer = instructionText
+                    timer = Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false, block: { _ in
+                        self.predictText(with: textBuffer)
+                    })
+                }
+            }
+            //debugPrint(result.bestTranscription.formattedString as? String ?? "")
+//            if let result = result {
+//                if result.isFinal {
+//                    let transcriptString = result.bestTranscription.formattedString
+////                    guard let prediction = self.tagger.predictAction(for: transcriptString) else { return }
+////                    self.delegate?.kpVoiceAssistant(self, didRecievePrediction: prediction)
+//                    //print("INSTRUCTION =\(transcriptString) PREDICTION = \(prediction)")
+//                }
                 
-                
-                
-            } else if let error = error {
+            else if let error = error {
                 // throw an error via delegate
                 print(error)
             }
+                                                            
         })
+    }
+    
+    @objc func predictText(with clause: String) {
+        debugPrint("do call the prediction for \(clause)")
+        self.stopListening()
+        guard let prediction = self.tagger.predictAction(for: clause.lowercased()) else { return }
+        self.delegate?.kpVoiceAssistant(self, didRecievePrediction: prediction, inputTranscript: clause)
     }
     
     public func stopListening() {
@@ -102,9 +135,14 @@ public class KPVoiceCommandAssitant {
         
     // MARK: Display prediction
     public func displayPrediction() {
-        commands.forEach { review in
+        /*commands.forEach { review in
             guard let prediction = tagger.prediction(for: review) else { return }
             debugPrint("\(review): \(prediction)")
+        }
+         */
+        commands.forEach { instruction in
+            guard let prediction = tagger.predictAction(for: instruction) else { return }
+            debugPrint("\(instruction): \(prediction)")
         }
     }
 }
