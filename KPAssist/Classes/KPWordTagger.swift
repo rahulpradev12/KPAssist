@@ -14,6 +14,26 @@ public class KPWordTagger {
     private let scheme = NLTagScheme("KPVoiceActionReview")
     private let options: NLTagger.Options = [.omitPunctuation]
     
+    //Text classifier
+    private lazy var speechSentimentClassifier: NLModel? = {
+            do {
+                let mainBundle = Bundle(for: Self.self)
+                if let url = mainBundle.url(forResource: "KPAssist", withExtension: "bundle"){
+                    
+                    let kpAssistBundle = Bundle(url: url)
+                    
+                    let mlModelURL = kpAssistBundle?.url(forResource: "VoiceToActionSentiment", withExtension: "mlmodelc")
+                    let model = try NLModel(contentsOf: mlModelURL!)
+                    return model
+                }
+                return nil
+                
+            } catch {
+                return nil
+            }
+                                    
+        }()
+
     
     // Word Tagging
     private lazy var tagger: NLTagger? = {
@@ -51,4 +71,10 @@ public class KPWordTagger {
         }
         .first
     }
+    
+    // predict text/action by text classifier
+    public func predictAction(for text: String) -> String? {
+        return speechSentimentClassifier?.predictedLabel(for: text)
+    }
+
 }

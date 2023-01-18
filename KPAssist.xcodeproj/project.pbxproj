@@ -14,6 +14,9 @@
 		ED81E283291D3C2C000DE6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81E282291D3C2C000DE6A7 /* Assets.xcassets */; };
 		ED81E286291D3C2C000DE6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81E284291D3C2C000DE6A7 /* LaunchScreen.storyboard */; };
 		ED81E28F291D4135000DE6A7 /* ActionClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ED81E28E291D4134000DE6A7 /* ActionClassifier1.mlmodel */; };
+		ED81E29F29240B67000DE6A7 /* KPAssist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF9B9B52914E78A008CF800 /* KPAssist.framework */; };
+		ED81E2A029240B67000DE6A7 /* KPAssist.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDF9B9B52914E78A008CF800 /* KPAssist.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED81E2A929241088000DE6A7 /* VoiceToActionSentiment.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ED81E2A829241088000DE6A7 /* VoiceToActionSentiment.mlmodel */; };
 		EDF9B9BA2914E78A008CF800 /* KPAssist.docc in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9B92914E78A008CF800 /* KPAssist.docc */; };
 		EDF9B9C02914E78B008CF800 /* KPAssist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF9B9B52914E78A008CF800 /* KPAssist.framework */; };
 		EDF9B9C52914E78B008CF800 /* KPAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B9C42914E78B008CF800 /* KPAssistTests.swift */; };
@@ -23,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		ED81E2A129240B67000DE6A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF9B9AC2914E78A008CF800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF9B9B42914E78A008CF800;
+			remoteInfo = KPAssist;
+		};
 		EDF9B9C12914E78B008CF800 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EDF9B9AC2914E78A008CF800 /* Project object */;
@@ -31,6 +41,20 @@
 			remoteInfo = KPAssist;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED81E2A329240B67000DE6A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED81E2A029240B67000DE6A7 /* KPAssist.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED81E277291D3C2A000DE6A7 /* KPAssistDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPAssistDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +66,7 @@
 		ED81E285291D3C2C000DE6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED81E287291D3C2C000DE6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED81E28E291D4134000DE6A7 /* ActionClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ActionClassifier1.mlmodel; sourceTree = "<group>"; };
+		ED81E2A829241088000DE6A7 /* VoiceToActionSentiment.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = VoiceToActionSentiment.mlmodel; path = ../../../../../.Trash/VoiceToActionSentiment.mlmodel; sourceTree = "<group>"; };
 		EDF9B9B52914E78A008CF800 /* KPAssist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPAssist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF9B9B82914E78A008CF800 /* KPAssist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAssist.h; sourceTree = "<group>"; };
 		EDF9B9B92914E78A008CF800 /* KPAssist.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KPAssist.docc; sourceTree = "<group>"; };
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED81E29F29240B67000DE6A7 /* KPAssist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +106,7 @@
 		ED81E26E291BA57B000DE6A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ED81E2A829241088000DE6A7 /* VoiceToActionSentiment.mlmodel */,
 				ED81E28E291D4134000DE6A7 /* ActionClassifier1.mlmodel */,
 			);
 			path = Resources;
@@ -108,6 +135,13 @@
 			path = KPAssistDemo;
 			sourceTree = "<group>";
 		};
+		ED81E29E29240B67000DE6A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDF9B9AB2914E78A008CF800 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +149,7 @@
 				EDF9B9C32914E78B008CF800 /* KPAssistTests */,
 				ED81E278291D3C2A000DE6A7 /* KPAssistDemo */,
 				EDF9B9B62914E78A008CF800 /* Products */,
+				ED81E29E29240B67000DE6A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,10 +203,12 @@
 				ED81E273291D3C2A000DE6A7 /* Sources */,
 				ED81E274291D3C2A000DE6A7 /* Frameworks */,
 				ED81E275291D3C2A000DE6A7 /* Resources */,
+				ED81E2A329240B67000DE6A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ED81E2A229240B67000DE6A7 /* PBXTargetDependency */,
 			);
 			name = KPAssistDemo;
 			productName = KPAssistDemo;
@@ -301,6 +338,7 @@
 				ED81E28F291D4135000DE6A7 /* ActionClassifier1.mlmodel in Sources */,
 				EDF9B9D329150CB9008CF800 /* KPWordTagger.swift in Sources */,
 				EDF9B9D529150DF1008CF800 /* KPVoiceCommandAssitant.swift in Sources */,
+				ED81E2A929241088000DE6A7 /* VoiceToActionSentiment.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +353,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		ED81E2A229240B67000DE6A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF9B9B42914E78A008CF800 /* KPAssist */;
+			targetProxy = ED81E2A129240B67000DE6A7 /* PBXContainerItemProxy */;
+		};
 		EDF9B9C22914E78B008CF800 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EDF9B9B42914E78A008CF800 /* KPAssist */;
